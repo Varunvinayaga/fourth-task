@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Counter from "./counter";
+import DynamicInput from "./dynamicinput";
+import ToggleButton from "./ToggleButton";
+import ShowHide from "./showhide";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-5 d-flex justify-content-around text-center">
+      <p>
+        <h3>Task - 1</h3>
+        <Counter />
+      </p>
+      <p>
+        <h3>Task - 2</h3>
+        <DynamicInput />
+      </p>
+      <p>
+        <h3>Task - 3</h3>
+        <ToggleButton />
+      </p>
+      <p>
+        <h3>Task - 4</h3>
+        <ShowHide />
+      </p>
     </div>
   );
 }
